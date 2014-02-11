@@ -34,6 +34,13 @@
   <strong>Id materia:</strong>
   <%= @item.id_materia %>
 </p>
+<p>
+  <%= image_tag @item.archivo_path %>
+ 
+   
+   <embed src= <%= @item.archivo_filename %>  width=”500″ height=”375″>
+</p>
+
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
