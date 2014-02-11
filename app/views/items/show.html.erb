@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @item.nombre %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @item.tipo %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @item.descripcion %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @item.fecha %>
+</p>
+
+<p>
+  <strong>Peso:</strong>
+  <%= @item.peso %>
+</p>
+
+<p>
+  <strong>Formato:</strong>
+  <%= @item.formato %>
+</p>
+
+<p>
+  <strong>Id materia:</strong>
+  <%= @item.id_materia %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
